@@ -63,10 +63,58 @@ Each room has a unique design and environment.
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Jeelpatel2345/cosmos.git
 cd cosmos
+```
+
+---
+
+### 2. Install dependencies
+
+#### 📦 Client (Frontend)
+
+```bash
+cd client
+npm install
+```
+
+#### 📦 Server (Backend)
+
+```bash
+cd server
+npm install
+```
+
+---
+
+### 3. Run the project
+
+#### 🚀 Start backend server
+
+```bash
+cd server
+node index.js
+```
+
+#### 🌐 Start frontend
+
+```bash
+cd client
+npm run dev
+```
+
+---
+
+### 4. Open in browser
+
+```
+http://localhost:5173
+```
+
+Open multiple tabs to test real-time interaction.
+
