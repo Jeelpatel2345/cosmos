@@ -1,10 +1,10 @@
 # 🌌 Virtual Cosmos
 
+
 A real-time 2D multiplayer virtual space where users can move around and interact based on proximity.
 
 **Core mechanic:** When users move close to each other → chat connects. When they move apart → chat disconnects.
 
----
 
 ## Tech Stack
 
@@ -15,11 +15,8 @@ A real-time 2D multiplayer virtual space where users can move around and interac
 | Real-time | Socket.IO |
 | Database | MongoDB (optional, graceful in-memory fallback) |
 
----
-
 ## Project Structure
 
-```
 virtual-cosmos/
 ├── client/               # React frontend (Vite)
 │   └── src/
@@ -48,7 +45,6 @@ virtual-cosmos/
             └── proximity.js            # Distance calculations
 ```
 
----
 
 ## Quick Start
 
@@ -98,7 +94,6 @@ npm run dev
 
 Open **two or more browser tabs** at `http://localhost:5173`, enter different names, and move your avatars close together to trigger proximity chat.
 
----
 
 ## Features
 
@@ -111,7 +106,6 @@ Open **two or more browser tabs** at `http://localhost:5173`, enter different na
 - **Toast Notifications** — Visual feedback on connect/disconnect
 - **Status Bar** — Live count of users online and active connections
 
----
 
 ## Socket Events Reference
 
@@ -129,7 +123,6 @@ Open **two or more browser tabs** at `http://localhost:5173`, enter different na
 | `chat:message` | Client → Server | `{ roomId, message }` |
 | `chat:newMessage` | Server → Room | `{ roomId, message }` |
 
----
 
 ## Configuration
 
@@ -139,4 +132,154 @@ Open **two or more browser tabs** at `http://localhost:5173`, enter different na
 | `MOVE_SPEED` | `client/src/components/CosmosCanvas.jsx` | `4` | Pixels per frame |
 | `THROTTLE_MS` | `client/src/components/CosmosCanvas.jsx` | `30` | Position emit throttle |
 | `PORT` | `server/.env` | `4000` | Server port |
+
+
+
+
+
+## 🚀 Overview
+
+Virtual Cosmos is an interactive web application that simulates real-world communication in a virtual environment. Users can move around, connect with nearby players, and communicate using chat, voice, and video.
+
+
+
+## ✨ Features
+
+### 🧑‍🤝‍🧑 Real-Time Interaction
+- Live multiplayer environment
+- Player movement with proximity detection
+- Nearby users automatically connect
+
+### 💬 Communication
+- Real-time text chat
+- Voice chat (WebRTC)
+- Video chat support
+- Typing and speaking indicators
+
+### 🌍 Multi-Room System
+- 🎮 Gaming Room (Cyberpunk UI)
+- 🎵 Music Room (Animated UI)
+- 💻 Coding Room (Developer theme)
+- 🔐 Cyber Security Room (Matrix style)
+- 🌐 General Room (Modern UI)
+
+Each room has a unique design and environment.
+
+### 🎨 UI/UX
+- Glassmorphism design
+- Smooth animations
+- Responsive layout
+- Interactive avatars with status
+
+### 🧠 Unique Features
+- Proximity-based communication
+- Live activity tracking
+- Emoji reactions
+- Player status system
+- Mini-map / radar (optional)
+
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React.js
+- Custom CSS (Glassmorphism UI)
+
+**Backend**
+- Node.js
+- Socket.io
+
+**Realtime Communication**
+- WebSockets
+- WebRTC (simple-peer)
+
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Jeelpatel2345/cosmos.git
+cd cosmos
+```
+
+### 2. Install dependencies
+
+#### 📦 Client (Frontend)
+
+```bash
+cd client
+npm install
+```
+
+#### 📦 Server (Backend)
+
+```bash
+cd server
+npm install
+```
+
+
+
+### 3. Run the project
+
+#### 🚀 Start backend server
+
+```bash
+cd server
+node index.js
+```
+
+#### 🌐 Start frontend
+
+```bash
+cd client# 🌌 Virtual Cosmos
+
+A real-time 2D multiplayer virtual space where users can move around and interact based on proximity.
+
+**Core mechanic:**  
+When users move close → chat connects  
+When users move away → chat disconnects  
+
+
+## 🚀 Features
+
+- 2D virtual environment (PixiJS canvas)
+- Real-time multiplayer (Socket.IO)
+- Proximity-based chat system
+- Live user movement (WASD / Arrow keys)
+- Auto connect / disconnect chat
+- Multiple user connections
+- Clean UI with chat panel
+- Status system (emoji-based)
+
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React (Vite)
+- Tailwind CSS
+- PixiJS
+
+**Backend**
+- Node.js
+- Express
+- Socket.IO
+
+---
+
+## 📦 Project Structure
+
+npm run dev
+```
+
+
+### 4. Open in browser
+
+```
+http://localhost:5173
+```
+
+Open multiple tabs to test real-time interaction.
+
 
