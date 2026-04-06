@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cosmos-bg: #080c14;
+  --cosmos-surface: #0f1520;
+  --cosmos-border: #1e2d45;
+  --cosmos-accent: #3b82f6;
+  --cosmos-accent-glow: rgba(59,130,246,0.3);
+  --cosmos-text: #e2e8f0;
+  --cosmos-muted: #64748b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--cosmos-bg);
+  color: var(--cosmos-text);
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#root { height: 100vh; display: flex; flex-direction: column; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--cosmos-surface); }
+::-webkit-scrollbar-thumb { background: var(--cosmos-border); border-radius: 2px; }
+
+.font-display { font-family: 'Syne', sans-serif; }
